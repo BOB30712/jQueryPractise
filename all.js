@@ -10,7 +10,7 @@ $(document).ready(function(){
 });
 $(window).scroll(function(){
   last=$("body").height()-$(window).height()
-  if($(window).scrollTop()+500>=last){
+  if($(window).scrollTop()+200>=last){
       $(".scrolltotop").show();
   }else{
       $(".scrolltotop").hide();
