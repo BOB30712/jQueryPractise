@@ -3,6 +3,18 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).siblings().slideToggle().parent().siblings().find('.test').slideUp();
     });
+    $('.scrolltotop>a').click(function(e){
+      e.preventDefault();
+      $('html,body').animate({scrollTop:0}, 700);
+    });
+});
+$(window).scroll(function(){
+  last=$("body").height()-$(window).height()
+  if($(window).scrollTop()+500>=last){
+      $(".scrolltotop").show();
+  }else{
+      $(".scrolltotop").hide();
+  }
 });
 var swiper = new Swiper(".mySwiper", {
     pagination: {
