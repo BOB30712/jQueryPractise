@@ -53,13 +53,9 @@ table {
 /*
 往下開始是自己寫的css
 */
-
-/*
 *{
-    outline: 1px solid rebeccapurple;
+    box-sizing: border-box;
 }
-*/
-
 
 body {
     font-family: Microsoft JhengHei;
@@ -71,53 +67,63 @@ body {
     margin-bottom: 15px;
 }
 
-.header3{
+.socialMedia{
     background: rgb(224, 224, 224);
     display: flex;
     justify-content: end;
 }
 
-.header3 ul{
+.socialMedia ul{
     display: flex;
 }
 
-.header3 a{
+.socialMedia a{
     display: block;
     padding: 5px 10px;
     text-decoration: none;
 }
 
-.header3 a:hover{
+.socialMedia a:hover{
     font-weight: bold;
 }
 
-.header3 img{
+.socialMedia img{
     vertical-align:top;
 }
 
-.header3 .fb{
+.socialMedia .fb{
     color: #4460a0;
     border-right: solid 0.5px #cccccc;
 }
 
-.header2{
+.navbar >h1>a{
+    width: 224px;
+    height: 50px;
+    display: block;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    text-indent: 150%;
+    white-space:nowrap;
+    overflow: hidden;
+}
+
+.navbar{
     display: flex;
     justify-content: space-between;
 }
 
-.header2>ul{
+.navbar>ul{
     display: flex;
     align-items :center;
 }
 
-.header2 li{
+.navbar li{
     padding-right: 10px;
 }
-.header2 img{
+.navbar img{
     border-bottom: 2px solid white;
 }
 
-.header2 a{
+.navbar a{
     font-weight: bold;
     /*
     width: 100px;
@@ -131,12 +137,11 @@ body {
     color: #00cc99;
     display: block;
     text-decoration: none;
-    box-sizing: border-box;
     background-color: white;
     position: relative;
 }
 
-.header2>ul>li>a::after{
+.navbar>ul>li>a::after{
     content:" ";
     display:block; 
     margin-top: 15px;
@@ -148,7 +153,7 @@ body {
     left: 0;
     z-index: 6;
 }
-.header2>ul>li>a:hover::after{
+.navbar>ul>li>a:hover::after{
     width: 100%;
 }
 
@@ -156,7 +161,6 @@ body {
     width: 1000px;
     height: 300px;
     background-position: center bottom;
-    box-sizing: border-box;
     display: flex;
     align-items :center;
 }
@@ -175,13 +179,12 @@ body {
     justify-content: space-between;
     margin-top: 40px;
     margin-bottom: 40px;
-    box-sizing: border-box;
     
 }
 
-.content .item{
+.content>ul>li{
     width: 300px;
-    box-sizing: border-box;
+    margin: 0px 15px;
     /*
     box-shadow: 1px 3px 1px 1px rgba(0, 0, 0, 0.2);
     */
@@ -189,14 +192,14 @@ body {
     
 }
 
-.content .item h5{
+.course li>h5{
     font-weight: bolder;
     font-size: 25px;
     text-align: center;
     margin-bottom: 10px;
 }
 
-.content .item p{
+.course  li>p{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -204,75 +207,75 @@ body {
     letter-spacing: 2px;
 }
 
-.content .item ul{
+.course li>ul{
     padding-left: 25px;
     list-style-type: '✔';
     padding-top: 8px;
 }
 
-.content .item li{
+.course li>ul>li{
     padding-bottom: 10px;
    
 }
 
-.content1{
+.difference{
     margin-bottom: 50px;
 }
 
 
-.content1 h1,table{
+.difference h2,table{
     text-align: center;
     margin: auto;
 }
 
-.content1 h1{
+.difference h2{
     padding: 30px;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 5px;
 }
 
-.content1 tr,th,td{
+.difference tr,th,td{
     padding: 10px 50px;
     border-top: 1px solid gray;
     border-bottom: 1px solid gray;
 }
 
-.content1 th{
+.difference th{
     font-weight: bold;
 }
 
-.content1 .left{
+.difference .left{
     text-align: left;
 }
 
-.content1 .green{
+.difference .green{
     color: green;
     font-weight: bold;
 }
 
-.content2{
+.information{
     background: linear-gradient(#00654c,#009771);
     vertical-align:bottom;
     padding-top: 60px;
 }
 
-.content2 h1,label{
+.information h3,label{
     color: white;
 }
 
-.content2 h1{
+.information h3{
     font-size: 30px;
     letter-spacing: 5px;
     text-align: center;
 }
 
-.content2 form{
+.information form{
     display: flex;
-    justify-content: center;
+    justify-content:space-around;
 }
 
-.content2 textarea{
+.information textarea{
     width: 600px;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -280,28 +283,28 @@ body {
     border-radius: 5px;
 }
 
-.content2 form div{
+.information form div{
     margin: 40px 1px;
 }
 
-.content2 input,label{
+.information input,label{
     display: block;
-    margin: 20px;
+    width: 250px;
+    margin:5px 0px;
 }
-.content2 input{
-    margin-right: 0px;
+.information input{
     font-size: 25px;
     width: 250px;
     border-radius: 1px;
+    margin:5px 0px;
 }
 
-.content2 .button{
+.information .button{
     border: 1px solid white;
     background: #00cc99;
     font-size: 15px;
     width: 50px;
-    float: right;
-    margin: 0px;
+    margin:10px 0px;
 }
 
 .button:hover{
@@ -313,34 +316,36 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.footer .contact h1{
+.footer a{
     color: #00654c;
     padding-bottom: 5px;
+    text-decoration: none;
 }
 
-.footer .contact span{
+.footer span{
     color:black;
 }
 
-.test{
+.list{
     display: none;
     position:absolute;
     z-index: 5;
 }
-.test>li>a{
+.list>li>a{
     background-color: white;
     opacity: 0.8;
     border: 0px solid black;
 }
 
-.test>li>a:hover{
+.list>li>a:hover{
     background-color: #00cc99;
     color: white;
     transition: all 0.8s;
 }
-.title h2{
+.title> h2,.title> p{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 50px;
     font-size: 35px;

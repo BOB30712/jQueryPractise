@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    $('.header2>ul>li>a').click(function(e){
+    $('.navbar>ul>li>a').click(function(e){
         e.preventDefault();
-        $(this).siblings().slideToggle().parent().siblings().find('.test').slideUp();
+        $(this).siblings().slideToggle().parent().siblings().find('.list').slideUp();
     });
     $('.scrolltotop>a').click(function(e){
       e.preventDefault();

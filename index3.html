@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQueryPractise</title>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/lightbox.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
     <div class="wrap">
-        <div class="header3">
+        <div class="socialMedia">
             <ul>
                 <li>
                     <a href="#" class="fb">
@@ -27,20 +26,21 @@
             </ul>
 
         </div>
-        <div class="header2">
-            <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png
-            " alt="logo">
+        <div class="navbar">
+            <h1>
+                <a href="#">六角學院</a>
+            </h1>
             <ul>
                 <li><a href="#">首頁</a></li>
                 <li><a href="#">產品介紹</a>
-                    <ul class="test">
+                    <ul class="list">
                         <li><a href="#">UI設計</a></li>
                         <li><a href="#">前端開發</a></li>
                         <li><a href="#">後端課程</a></li>
                     </ul>
                 </li>
                 <li><a href="#">聯絡我們</a>
-                    <ul class="test">
+                    <ul class="list">
                         <li><a href="#">部落格</a></li>
                         <li><a href="#">常見問題</a></li>
                     </ul>
@@ -50,7 +50,7 @@
         <div class="swiper mySwiper">
             <div class="title" style="position: absolute;z-index: 5;width: 100%;margin-top: 100px;">
                 <h2>六角學院</h2>
-                <h2>讓你奠定良好的前端基礎</h2>
+                <p>讓你奠定良好的前端基礎</p>
             </div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -68,35 +68,37 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <div class="content">
-            <div class="item">
-                <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt=""/></a>
-                <h5>Html5基礎教學</h5>
-                <p>
-                主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
-                </p>
-            </div>
-            <div class="item">
-                <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt=""/></a>
-                <h5>響應式網站設計</h5>
-                <p>
-                響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
-                </p>
-            </div>
-            <div class="item">
-                <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt=""/></a>
-                <h5>jQuery實戰教學</h5>
-                <p>本課程有以下特色:</p>
-                <ul>
-                    <li>瞭解變數的使用方法</li>
-                    <li>學習並操作DOM</li>
-                    <li>學習基本數學運算方法</li>
-                    <li>套件的操作及運用</li>
-                </ul>
-            </div>
+        <div class="course">
+            <ul style="display:flex">
+                <li>
+                    <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt=""/></a>
+                    <h5>Html5基礎教學</h5>
+                    <p>
+                    主流前端網站設計的基礎就在六角學院，在這裡不在是填鴨式教學，而是透過實際的範例，瞭解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+                    </p>
+                </li>
+                <li>
+                    <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt=""/></a>
+                    <h5>響應式網站設計</h5>
+                    <p>
+                    響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生瞭解行動版開發技巧。
+                    </p>
+                </li>
+                <li>
+                    <a class="example-image-link" href="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" data-lightbox="example-set" data-title="Click the right half of the image to move forward."><img class="example-image" src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt=""/></a>
+                    <h5>jQuery實戰教學</h5>
+                    <p>本課程有以下特色:</p>
+                    <ul>
+                        <li>瞭解變數的使用方法</li>
+                        <li>學習並操作DOM</li>
+                        <li>學習基本數學運算方法</li>
+                        <li>套件的操作及運用</li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <div class="content1">
-            <h1>線上及實體課程的差異</h1>
+        <div class="difference">
+            <h2>線上及實體課程的差異</h2>
             <table>
                 <tr>
                     <th class="left">項目</th>
@@ -142,29 +144,29 @@
                 </tr>
             </table>
         </div>
-        <div class="content2">
-            <h1>對我們課程有興趣嗎?</h1>
-            <h1>歡迎留下您的資料</h1>
+        <div class="information">
+            <h3>對我們課程有興趣嗎?</h3>
+            <h3>歡迎留下您的資料</h3>
             <form>
                 <textarea>
                 </textarea>
-                <div>
-                    <label>姓名:</label>
-                    <input type="text">
-                    <label>電話:</label>
-                    <input type="text">
-                    <label>信箱:</label>
-                    <input type="text">
-                    <input class="button" type="submit" value="送出">
+                <div style="align-items: flex-end;display: flex;flex-direction: column;">
+                    <label for="name">姓名:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="phone">電話:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <label for="email">信箱:</label>
+                    <input type="email" name="email" id="email">
+                    <input class="button" type="submit" value="送出" style="cursor:pointer">
                 </div>
             </form>
         </div>
         <div class="footer">
             <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/footerLogo.png" alt="logo">
-            <div class="contact">
-            <h1>聯絡我們: <span>hexschool@gmail.com</span></h1>
-            <h1>電話: <span>0999123456</span></h1>
-            </div>
+            <ul>
+                <li><a href="email">聯絡我們: <span>hexschool@gmail.com</a></li>
+                <li><a href="tel">電話: <span>0999123456</a></li>
+            </ul>
         </div>
         <div class="scrolltotop" style="position:fixed;bottom: 0;right: 0;display: none;">
             <a href="#">
@@ -172,10 +174,9 @@
             </a>
         </div>
   </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="js/lightbox.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="all.js"></script>
-    <script>
-    </script>
+    <script src="js/all.js"></script>
 </body>
 </html>
